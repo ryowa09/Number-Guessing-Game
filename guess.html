@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="guess.css">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <div class="gameContainer">
+
+    <header>
+        <h1>Number Guessing Game</h1>
+        <div class="question">?</div>
+    </header>
+
+        <h2>Guess between 1 and 50</h2>
+        <input type="number" id="numBox" disabled>
+        <p id="result">NIGGA</p>
+        <p>Attempts:<span id="attempts"></span></p>
+
+        <button id="guessBtn" onclick="guess()" disabled>Guess</button><br>
+        <button id="startBtn" onclick="gameStart()">Start Game</button><br>
+        <button id="resetBtn" onclick="resetGame()">Reset Game</button>
+    </div>
+
+
+    <script src="guess.js"></script>
+</body>
+</html>
